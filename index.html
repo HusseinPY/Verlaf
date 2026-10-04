@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verlaf | Management Consultancy, Dubai</title>
+<meta name="description" content="Verlaf is a Dubai-based management consultancy advising leadership teams across the GCC on strategy, governance, workforce, policy and financial advisory.">
+<link rel="canonical" href="https://verlaf.com/">
+<meta property="og:title" content="Verlaf | Management Consultancy">
+<meta property="og:description" content="Principled advisory, providing clarity at every step.">
+<meta property="og:url" content="https://verlaf.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://verlaf.com/assets/logo-dark.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#091611; --ice:#6AD1E3; --white:#FFFFFF;
+    --deep:#005A70; --steady:#3593A2; --grey:#D9D9D6;
+    --ink:#1d2a26; --muted:#5b6b67; --bg-soft:#f4f6f6;
+    --max:1140px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Hanken Grotesk",Univers,"Helvetica Neue",Arial,sans-serif;font-weight:300;color:var(--ink);background:var(--white);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+  a{color:var(--deep)}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-weight:700;line-height:1.15;color:var(--black)}
+  h2{font-size:clamp(28px,4vw,40px);margin-bottom:18px}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--steady);margin-bottom:12px}
+
+  /* header */
+  header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid #e7ebea}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .nav img{height:38px;width:auto}
+  .nav ul{list-style:none;display:flex;gap:30px}
+  .nav ul a{text-decoration:none;color:var(--black);font-weight:400;font-size:15px}
+  .nav ul a:hover{color:var(--steady)}
+  .nav .cta{background:var(--deep);color:#fff;padding:9px 18px;border-radius:4px}
+  .nav .cta:hover{background:var(--black);color:#fff}
+  #menu-btn{display:none;background:none;border:0;font-size:26px;cursor:pointer;color:var(--black)}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;background:var(--deep);color:#fff}
+  .hero .wrap{position:relative;z-index:2;padding-top:110px;padding-bottom:120px}
+  .hero h1{color:#fff;font-size:clamp(36px,6vw,64px);max-width:760px;font-weight:300}
+  .hero h1 strong{font-weight:700;color:var(--ice)}
+  .hero p{max-width:600px;margin-top:22px;font-size:19px;color:#d8eef2}
+  .hero .btns{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 26px;border-radius:4px;text-decoration:none;font-weight:600;font-size:15px}
+  .btn-ice{background:var(--ice);color:var(--black)}
+  .btn-ice:hover{background:#fff}
+  .btn-line{border:1px solid rgba(255,255,255,.6);color:#fff}
+  .btn-line:hover{background:rgba(255,255,255,.1)}
+  .hero .emblem{position:absolute;right:-90px;top:50%;transform:translateY(-50%);width:560px;opacity:.22;z-index:1}
+
+  section{padding:96px 0}
+
+  /* about */
+  .about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:start}
+  .about-grid p+p{margin-top:16px}
+  .name-card{background:var(--bg-soft);border-left:4px solid var(--ice);padding:30px 30px}
+  .name-card h3{font-size:20px;margin-bottom:10px}
+  .name-card p{font-size:15.5px;color:var(--muted)}
+  .vm{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:56px}
+  .vm div{border-top:2px solid var(--black);padding-top:18px}
+  .vm h3{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--steady);margin-bottom:8px;font-weight:600}
+  .vm p{font-size:22px;color:var(--black);font-weight:400;line-height:1.4}
+
+  /* services */
+  #services{background:var(--bg-soft)}
+  .intro{max-width:720px;color:var(--muted);margin-bottom:48px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{background:#fff;padding:32px 28px;border-radius:6px;border:1px solid #e3e8e7;display:flex;flex-direction:column}
+  .card .num{font-size:13px;font-weight:600;color:var(--ice);background:var(--black);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;margin-bottom:18px}
+  .card h3{font-size:21px;margin-bottom:10px}
+  .card p{font-size:15.5px;color:var(--muted)}
+  .card ul{margin-top:16px;padding-left:0;list-style:none;font-size:15px}
+  .card li{padding:5px 0 5px 18px;position:relative;border-top:1px solid #eef1f0}
+  .card li::before{content:"";position:absolute;left:0;top:14px;width:7px;height:7px;border-radius:50%;background:var(--steady)}
+  .card.cta-card{background:var(--deep);border:0;color:#fff;justify-content:center}
+  .card.cta-card h3{color:#fff}
+  .card.cta-card p{color:#d8eef2;margin-bottom:22px}
+
+  /* approach */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:40px;counter-reset:s}
+  .step{padding:22px 18px;border-top:3px solid var(--grey);position:relative}
+  .step::before{content:"";position:absolute;top:-8px;left:18px;width:13px;height:13px;border-radius:50%;background:var(--steady)}
+  .step:last-child::before{background:var(--ice)}
+  .step h3{font-size:16px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+  .step p{font-size:15px;color:var(--muted)}
+  .sectors{margin-top:64px;display:flex;flex-wrap:wrap;gap:10px}
+  .sectors span{border:1px solid var(--grey);border-radius:40px;padding:8px 18px;font-size:15px;font-weight:400}
+
+  /* contact */
+  #contact{background:var(--black);color:#dfe7e5}
+  #contact h2{color:#fff}
+  .contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
+  .contact-grid p.lead{font-size:19px;color:#c8d3d1}
+  .contact-box{border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:30px}
+  .contact-box dt{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);font-weight:600;margin-top:20px}
+  .contact-box dt:first-child{margin-top:0}
+  .contact-box dd{margin-top:4px;color:#fff}
+  .contact-box a{color:#fff}
+  #contact .btn{margin-top:30px}
+
+  footer{background:var(--black);border-top:1px solid rgba(255,255,255,.1);color:#8fa09c;font-size:13.5px}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:28px;padding-bottom:28px;flex-wrap:wrap}
+  footer img{height:30px;width:auto}
+
+  @media (max-width:900px){
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
+    .cards{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .hero .emblem{width:380px;right:-140px;opacity:.15}
+  }
+  @media (max-width:680px){
+    body{font-size:16px}
+    section{padding:68px 0}
+    .wrap{padding:0 16px}
+    #menu-btn{display:block}
+    .nav ul{display:none;position:absolute;top:74px;left:0;right:0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid #e7ebea}
+    .nav ul.open{display:flex}
+    .nav ul li a{display:block;padding:14px 16px}
+    .nav .cta{border-radius:0}
+    .cards,.vm,.steps{grid-template-columns:1fr}
+    .hero .wrap{padding-top:72px;padding-bottom:80px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" aria-label="Verlaf home"><img src="assets/logo-dark.png" alt="Verlaf Management Consultancy" width="520" height="103"></a>
+    <button id="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <ul id="menu">
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#contact" class="cta">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img class="emblem" src="assets/emblem-ice.png" alt="" aria-hidden="true">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--ice)">Management Consultancy · Dubai, UAE</p>
+      <h1>Principled advisory, providing <strong>clarity at every step.</strong></h1>
+      <p>We help leadership teams across the GCC make better decisions and execute change with clarity, discipline, and confidence.</p>
+      <div class="btns">
+        <a class="btn btn-ice" href="#services">Our services</a>
+        <a class="btn btn-line" href="mailto:info@verlaf.com">info@verlaf.com</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <p class="eyebrow">About Us</p>
+      <div class="about-grid">
+        <div>
+          <h2>Navigating complexity with clarity, discipline, and confidence.</h2>
+          <p>Verlaf is a management consultancy advising leadership teams on strategy, governance, operating models, and large-scale transformation in environments characterized by regulatory scrutiny, multiple stakeholders, and high execution risk. Our work is grounded in rigorous analysis and structured problem-solving, with a clear emphasis on practical outcomes rather than theoretical recommendations.</p>
+          <p>We were established to offer an independent advisory platform, free from predefined solutions or vendor bias, where decisions are shaped by evidence, context, and long-term sustainability. Our engagements are senior-led and deliberately tailored, so that recommendations withstand operational, regulatory, and stakeholder scrutiny.</p>
+          <p>Operating from the United Arab Emirates, we support clients across the GCC, with particular experience in the public sector, healthcare, regulated industries, and organizations undergoing structural reform or institutional change.</p>
+        </div>
+        <aside class="name-card">
+          <h3>What’s in the name?</h3>
+          <p>Verlaf draws on two ideas: <strong>Verus</strong>, meaning truth, accuracy, and integrity, and <strong>Curglaff</strong>, the honest shock of clarity that comes from truth. Together they express advancing with clarity and integrity: uncovering what is true, structuring what is complex, and enabling forward momentum through disciplined execution.</p>
+        </aside>
+      </div>
+      <div class="vm">
+        <div><h3>Our Vision</h3><p>To set the standard for principled, execution-focused advisory in complex environments.</p></div>
+        <div><h3>Our Mission</h3><p>To help organizations make better decisions and execute change with clarity, discipline, and confidence.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">Our Services</p>
+      <h2>Five practices, one disciplined approach.</h2>
+      <p class="intro">Each engagement is shaped around the decision at hand, combining analytical rigor with a practical grasp of implementation realities.</p>
+      <div class="cards">
+        <article class="card">
+          <span class="num">01</span>
+          <h3>Strategy to Execution</h3>
+          <p>Defining clear strategic direction and translating it into executable initiatives.</p>
+          <ul>
+            <li>Enterprise and business unit strategy</li>
+            <li>Transformation roadmaps and prioritization</li>
+            <li>Corporate restructuring</li>
+            <li>Operating model and performance improvement</li>
+            <li>Change management and value realization</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="num">02</span>
+          <h3>Governance, Risk &amp; Compliance</h3>
+          <p>Robust oversight that enables, not restricts, performance.</p>
+          <ul>
+            <li>Governance model design and review</li>
+            <li>Risk management and control frameworks</li>
+            <li>Compliance and assurance structures</li>
+            <li>Roles, authorities, and decision rights</li>
+            <li>Multi-tier governance for complex ecosystems</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="num">03</span>
+          <h3>Workforce</h3>
+          <p>Designing, mobilizing, and sustaining the people capabilities required to deliver strategy.</p>
+          <ul>
+            <li>Workforce strategy and planning</li>
+            <li>Organizational design and operating models</li>
+            <li>Capability and skills frameworks</li>
+            <li>Talent and performance management</li>
+            <li>Learning, development and knowledge transfer</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="num">04</span>
+          <h3>Policy, Regulatory &amp; Institutional Advisory</h3>
+          <p>Clear, coherent, and enforceable policies and frameworks for public and regulated entities.</p>
+          <ul>
+            <li>Policy and regulatory framework development</li>
+            <li>Institutional mandate and role definition</li>
+            <li>Regulatory impact and readiness assessments</li>
+            <li>Stakeholder and implementation planning</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="num">05</span>
+          <h3>Financial Advisory</h3>
+          <p>Strengthening financial governance, decision-making, and sustainability.</p>
+          <ul>
+            <li>Financial strategy and planning</li>
+            <li>Financial governance and control</li>
+            <li>Finance operating model and organization</li>
+            <li>Performance management and reporting</li>
+            <li>Cost management and efficiency</li>
+          </ul>
+        </article>
+        <article class="card cta-card">
+          <h3>Facing a complex decision?</h3>
+          <p>If you are navigating complexity, change, or performance pressure, we would welcome a conversation.</p>
+          <a class="btn btn-ice" href="mailto:info@verlaf.com" style="align-self:flex-start">Start a conversation</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="wrap">
+      <p class="eyebrow">How We Work</p>
+      <h2>From strategic intent to delivered value.</h2>
+      <p class="intro" style="margin-bottom:0">A single, disciplined journey owned end-to-end by senior advisors.</p>
+      <div class="steps">
+        <div class="step"><h3>Diagnose</h3><p>Baseline, performance and maturity assessment.</p></div>
+        <div class="step"><h3>Design</h3><p>Strategy, structures and frameworks fit for context.</p></div>
+        <div class="step"><h3>Mobilize</h3><p>Roadmaps, initiative design and sequencing.</p></div>
+        <div class="step"><h3>Execute</h3><p>Program governance and delivery discipline.</p></div>
+        <div class="step"><h3>Sustain</h3><p>Adoption, change enablement and value realization.</p></div>
+      </div>
+      <div class="sectors" aria-label="Sectors we serve">
+        <span>Government &amp; Public Sector</span><span>Healthcare</span><span>Energy &amp; Utilities</span><span>Financial Services</span><span>Real Estate &amp; Infrastructure</span><span>Education &amp; L&amp;D</span><span>Regulated Industries</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow" style="color:var(--ice)">Contact Us</p>
+        <h2>Let’s talk.</h2>
+        <p class="lead">Tell us about the challenge you are facing and a member of our senior team will get back to you.</p>
+        <a class="btn btn-ice" href="mailto:info@verlaf.com?subject=Enquiry%20via%20verlaf.com">Email info@verlaf.com</a>
+      </div>
+      <dl class="contact-box">
+        <dt>Email</dt>
+        <dd><a href="mailto:info@verlaf.com">info@verlaf.com</a></dd>
+        <dt>Address</dt>
+        <dd>Verlaf L.L.C-FZ<br>Meydan Grandstand, 6th Floor<br>Meydan Road, Nad Al Sheba<br>Dubai, United Arab Emirates<br>P.O. Box 35221</dd>
+        <dt>Directions</dt>
+        <dd><a href="https://maps.google.com/?q=Meydan+Grandstand+Dubai" target="_blank" rel="noopener">Open in Google Maps →</a></dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo-light.png" alt="Verlaf" width="520" height="103">
+    <span>© <span id="yr">2026</span> Verlaf L.L.C-FZ · License No. 2643275.01 · Meydan Free Zone, Dubai</span>
+  </div>
+</footer>
+
+<script>
+  const b=document.getElementById('menu-btn'),m=document.getElementById('menu');
+  b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>m.classList.remove('open')));
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
